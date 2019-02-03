@@ -1,36 +1,38 @@
 .container{
     background-color: rgb(2, 0, 0);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     margin: auto;
+    display: flex;
+    flex-direction: column
 }
 
 .greeting{
     color: #FFDD1B;
-    font-family: Pacifico;
-    padding: 10px 10px;
-        text-decoration: none;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        letter-spacing: 2px;
-
-    
+    font-size: 40px;
+    font-family: Monoton;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+    margin: left;
+    padding-top: 10px;
+    margin-top: 20%;
+    margin-left: 5%;
 }
-/* font-family: 'Orbitron',
-sans-serif;
-font-family: 'Bangers',
-cursive; */
+
 .headline{
+    position: relative;
+    top: 1%;
     margin-left: 20px;
     margin-right: 50px;
     border-width: 1px;
     border-style: solid;
     border-color: aliceblue;
     box-shadow: 2px 2px 1px rgb(36, 36, 236);
-    
+    margin-left: 5%;
 }
-
 
 .greeting:hover {
     -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
@@ -67,12 +69,64 @@ cursive; */
     }
 }
 
+.contact {
+    flex-direction: row;
+    display:  flex;
+    margin: auto;
+       
+}
 .github-icon {
     height: 20px;
     width: 20px;
+    padding: 1px 2px;
 }
 
 .gmail-icon {
     height: 17px;
     width: 22px;
+    padding: 1px 2px;
+}
+
+.nav-link {
+    flex-direction: row;
+    display: flex;
+    height: 30px;
+    width: 100%;
+    font-size: 12px;
+    justify-content: flex-end;
+}
+.head-tab1:hover {
+    border-bottom: 2px solid rgb(255, 42, 156);
+    padding-bottom: 5px;
+}
+.head-tab2:hover {
+    border-bottom: 2px solid rgb(255, 42, 156);
+    padding-bottom: 5px;
+}
+.head-tab3:hover {
+    border-bottom: 2px solid rgb(255, 42, 156);
+    padding-bottom: 5px;
+}
+
+.head-tab1 {
+    color: rgb(255, 42, 156);
+    font-family: Orbitron;
+    letter-spacing: 0.6px;
+    padding: 10px 10px;
+}
+.head-tab2 {
+    color: rgb(255, 42, 156);
+    font-family: Orbitron;
+    letter-spacing: 0.6px;
+    padding: 10px 10px;
+}
+.head-tab3 {
+    color: rgb(255, 42, 156);
+    font-family: Orbitron;
+    letter-spacing: 0.6px;
+    padding: 10px 10px;
+}
+
+.contact-link {
+    text-decoration: none;
 }
